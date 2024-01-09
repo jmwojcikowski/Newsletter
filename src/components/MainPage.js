@@ -52,7 +52,7 @@ function MainPage() {
     <div className="App">
       <div className='container'>
       <div className="mainImg">
-        <img src={getSrc()} alt="Responsive" />
+        <img src={getSrc()} alt="Responsive"></img>
       </div>
       <div className="component">
         <h1>Stay updated!</h1>
