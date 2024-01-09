@@ -1,6 +1,6 @@
 {
-  "homepage": "http://jmwojcikowski.github.io/Newsletter-Sign-Up",
   "name": "my-app",
+  "homepage": "https://jmwojcikowski.github.io/Newsletter",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

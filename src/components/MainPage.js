@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react';
-import SignUpMobile from "../assets/images/illustration-sign-up-mobile.svg";
-import SignUpDesktop from "../assets/images/illustration-sign-up-desktop.svg"
+import SignUpMobile from "../assets/images/mobile.svg";
+import SignUpDesktop from "../assets/images/desktop.svg"
 import IconList from "../assets/images/icon-list.svg";
 import { useNavigate } from 'react-router-dom';
 
