@@ -1,0 +1,177 @@
+/* 
+
+### Font
+
+- Family: [Roboto](https://fonts.google.com/specimen/Roboto)
+- Weights: 400, 700 */
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+
+--DarkSlateGrey: hsl(234, 29%, 20%);
+--CharcoalGrey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+
+--Tomato: hsl(4, 100%, 67%)
+    }
+
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    }
+
+p{
+    font-size: 16px;
+    /* padding-top:15px; */
+    }
+
+h1{
+    padding-bottom: 20px;
+}
+h5{
+    margin: 0;
+    padding-top:30px;
+}
+/* - Mobile: 375px */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--White);
+    border-radius: 10px;
+
+}
+.component{
+    padding:30px;
+    max-width: 400px;
+}
+
+
+/* .mainImg{
+    width:100%;
+    max-width:800px;
+}
+.mainImg>img{
+    width:100%;
+} */
+.ThankYouPage {
+    /* max-width:800px; */
+  
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 100vh; /* Dla wyśrodkowania zarówno w pionie, jak i poziomie */
+     
+   }
+
+    .ThankYouPage>.component>h1{
+        margin-top:30px;
+        }
+.element{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 25px;;
+}
+
+.element>p{
+    padding-left: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top:10px;
+    width:100%;
+  }
+
+  input, button {
+    margin-bottom: 10px;
+  }
+
+  .emailInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .emailInput{
+    box-sizing: border-box;
+    width:100%;
+    padding:20px;
+    border-radius: 10px; 
+    border:1px solid var(--Grey)
+  }
+
+  .invalidInput{
+    border: 1px solid var(--Tomato);; /* Czerwone obramowanie po kliknięciu */
+    color: var(--Tomato);
+    background-color: hsla(4, 100%, 67%, 0.2);
+  }
+
+  .invalidEmail{
+    color: var(--Tomato);
+  }
+
+
+  .emailButton{
+    box-sizing: border-box;
+    width:100%;
+    max-width:800px;
+    padding:18px;
+    margin-top:20px;
+    border-radius: 10px; 
+    font-weight: 700;
+    color: var(--White);
+    border:1px solid var(--CharcoalGrey);
+    background-color: var(--CharcoalGrey);
+  }
+  .dismissButton:hover, .emailButton:hover {
+    background: linear-gradient(to right, var(--Tomato), orange);
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.5s);
+    border:1px solid; 
+  }
+
+  .flex{
+display: flex;
+  }
+
+/* - Desktop: 1440px */
+
+@media (min-width: 900px) {
+
+.App{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    height: 100vh; /* Dla wyśrodkowania zarówno w pionie, jak i poziomie */
+    background-color: var(--CharcoalGrey);
+}
+
+.container{
+    flex-direction: row-reverse;
+    padding:30px;
+}
+
+
+
+    .ThankYouPage {
+        background-color: var(--CharcoalGrey);
+       }
+
+    .componentThanks{
+    border-radius: 10px;
+        background-color: var(--White);
+    }
+    .componentThanks>div{
+       margin-top:20px;
+        }
+
+      
+ 
+  }
